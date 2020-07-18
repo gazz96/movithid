@@ -54,6 +54,8 @@ Route::get('/logout/{id}/{tokens}', 'AuthController@logout');
 Route::post('/get-verification/{tokens}', 'AuthController@validateLogin');
 // On Demands
 
+// no comments
+
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('dash', function () {
